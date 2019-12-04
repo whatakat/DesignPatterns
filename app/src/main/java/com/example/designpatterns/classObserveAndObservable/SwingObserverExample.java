@@ -16,5 +16,6 @@ public class SwingObserverExample {
         button.sddActionListener(new DevilListener());
     }
     class AngelListener {}
+    class DevilListener {}
 
 }
