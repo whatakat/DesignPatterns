@@ -1,5 +1,7 @@
 package com.example.designpatterns.classObserveAndObservable;
 
+import android.net.wifi.p2p.WifiP2pManager;
+
 public class SwingObserverExample {
     JFrame frame;
 
@@ -13,4 +15,6 @@ public class SwingObserverExample {
         button.addActionListener(new AngelListener());
         button.sddActionListener(new DevilListener());
     }
+    class AngelListener {}
+
 }
