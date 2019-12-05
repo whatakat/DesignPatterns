@@ -3,10 +3,10 @@ package com.example.designpatterns.classObserveAndObservable;
 import android.net.wifi.p2p.WifiP2pManager;
 
 public class SwingObserverExample {
-    JFrame frame;
+   // JFrame frame;
 
     public static void main(String[] args) {
-        SwingObserverExample example = new SwingObserverExample();
+        /*SwingObserverExample example = new SwingObserverExample();
         example.go;
     }
     public void go(){
@@ -16,6 +16,6 @@ public class SwingObserverExample {
         button.sddActionListener(new DevilListener());
     }
     class AngelListener {}
-    class DevilListener {}
-
+    class DevilListener {}*/
+    }
 }
