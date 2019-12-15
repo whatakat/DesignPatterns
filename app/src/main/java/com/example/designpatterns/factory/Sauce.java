@@ -1,4 +1,4 @@
 package com.example.designpatterns.factory;
 
-public interface Dough {
+public interface Sauce {
 }
