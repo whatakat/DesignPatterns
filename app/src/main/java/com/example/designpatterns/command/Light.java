@@ -6,7 +6,7 @@ public class Light {
         System.out.println("Light is on "+comment);
     }
     public void off(){
-        System.out.println("Light is off");
+        System.out.println("Light is off "+comment);
     }
     public Light(String comment){
         this.comment = comment;
