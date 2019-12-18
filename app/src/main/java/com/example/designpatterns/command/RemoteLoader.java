@@ -25,5 +25,12 @@ public class RemoteLoader {
         remoteControl.setCommand(2,stereoOnWithCD,stereoOff);
         System.out.println(remoteControl);
 
+        remoteControl.onButtonWasPushed(0);
+        remoteControl.offButtonWasPushed(0);
+        remoteControl.onButtonWasPushed(1);
+        remoteControl.offButtonWasPushed(1);
+        remoteControl.onButtonWasPushed(2);
+        remoteControl.offButtonWasPushed(2);
+
     }
 }
