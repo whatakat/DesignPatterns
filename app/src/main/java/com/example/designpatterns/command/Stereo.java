@@ -6,5 +6,5 @@ public class Stereo {
     public void setCd(){}
     public void setDvd(){}
     public void setRadio(){}
-    public void setVolume(){}
+    public void setVolume(int volume){}
 }
