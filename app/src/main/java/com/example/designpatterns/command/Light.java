@@ -5,4 +5,5 @@ public class Light {
         System.out.println("Light is on");
     }
     public void off(){}
+    public Light(String comment){}
 }
