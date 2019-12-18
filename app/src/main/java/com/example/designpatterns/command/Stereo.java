@@ -7,4 +7,5 @@ public class Stereo {
     public void setDvd(){}
     public void setRadio(){}
     public void setVolume(int volume){}
+    public Stereo(String comment){}
 }
