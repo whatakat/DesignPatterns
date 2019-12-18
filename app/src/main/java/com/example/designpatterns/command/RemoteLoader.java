@@ -17,6 +17,13 @@ public class RemoteLoader {
                 new LightOffCommand(kitchenLight);
         StereoOnWithCDCommand stereoOnWithCD =
                 new StereoOnWithCDCommand(stereo);
+        StereoOffCommand stereoOff =
+                new StereoOffCommand(stereo);
+
+        remoteControl.setCommand(0,livingRoomLightOn,livingRoomLightOff);
+        remoteControl.setCommand(1, kitchenLightOn,kitchenLightOff);
+        remoteControl.setCommand(2,stereoOnWithCD,stereoOff);
+        System.out.println(remoteControl);
 
     }
 }
