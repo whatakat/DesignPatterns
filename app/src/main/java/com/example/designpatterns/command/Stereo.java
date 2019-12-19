@@ -13,7 +13,9 @@ public class Stereo {
     public void setDvd(){
         System.out.println("set DVD");
     }
-    public void setRadio(){}
+    public void setRadio(){
+        System.out.println("set radio");
+    }
     public void setVolume(int volume){}
     public Stereo(String comment){}
 }
