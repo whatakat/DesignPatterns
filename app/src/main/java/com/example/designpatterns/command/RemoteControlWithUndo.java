@@ -1,10 +1,11 @@
 package com.example.designpatterns.command;
 
-public class RemoteControl {
+public class RemoteControlWithUndo {
     Command[] onCommands;
     Command[] offComands;
+    Command undoCommand;
 
-    public RemoteControl(){
+    public RemoteControlWithUndo(){
         onCommands = new Command[7];
         offComands = new Command[7];
 
@@ -13,16 +14,22 @@ public class RemoteControl {
             onCommands[i] = noCommand;
             offComands[i] = noCommand;
         }
+        undoCommand = noCommand;
     }
     public void setCommand(int slot, Command onCommand, Command offCommand){
         onCommands[slot] = onCommand;
         offComands[slot] = offCommand;
     }
-    public void onButtonWasPushed(int slot){
+    public void onButtonWasPushed(int slot) {
         onCommands[slot].execute();
+        undoCommand = onCommands[slot];
     }
-    public void offButtonWasPushed(int slot){
+    public void offButtonWasPushed(int slot) {
         offComands[slot].execute();
+        undoCommand = offComands[slot];
+    }
+    public void undoCommandWasPushed(){
+        undoCommand.undo();
     }
 
     public String toString(){
