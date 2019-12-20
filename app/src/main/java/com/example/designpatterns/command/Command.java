@@ -1,6 +1,6 @@
 package com.example.designpatterns.command;
 
-public interface Command {
+public abstract interface Command {
     public void execute();
     public void undo();
 }
