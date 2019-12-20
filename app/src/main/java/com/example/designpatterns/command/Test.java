@@ -8,6 +8,8 @@ public class Test {
 
         LightOnCommand lightOn = new LightOnCommand(light);
         StereoOnWithCDCommand stereoOn = new StereoOnWithCDCommand(stereo);
+        TVOnCommand tvOn = new TVOnCommand(tv);
+
 
     }
 }
