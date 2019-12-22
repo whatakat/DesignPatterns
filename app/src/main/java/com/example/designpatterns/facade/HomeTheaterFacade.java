@@ -17,6 +17,20 @@ public class HomeTheaterFacade {
         this.stereo = stereo;
         this.tv = tv;
     }
+    public void watchMovie(String movie){
+        System.out.println("Get ready to watch movie...");
+        light.on();
+        tv.on();
+        stereo.on();
+        ceilingFan.low();
+    }
+    public void endMovie(){
+        System.out.println("Shutting movie theater down...");
+        ceilingFan.off();
+        stereo.off();
+        tv.off();
+        light.off();
+    }
 
 
 }
