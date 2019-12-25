@@ -19,7 +19,8 @@ public class PancakeHouseIterator implements Iterator {
 
     @Override
     public boolean hasNext() {
-        if (items.get(position)==null){
+
+        if (position >= items.size()){
             return false;
         }else {
             return true;
