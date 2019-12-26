@@ -1,9 +1,10 @@
 package com.example.designpatterns.iteratorAndLinker;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
-public class CafeMenu {
+public class CafeMenu implements Menu {
     HashMap<String, MenuItem> menuItems = new HashMap<String, MenuItem>();
     public CafeMenu(){
         addItem("Veggie Burger and Air Fries",
@@ -21,7 +22,7 @@ public class CafeMenu {
         MenuItem menuItem = new MenuItem(name, description, vegetarian, price);
         menuItems.put(menuItem.getName(), menuItem);
     }
-    public Map<String,MenuItem> getItems(){
-        return menuItems;
+    public Iterator<MenuItem> createIterator(){
+        return menuItems.values().iterator();
     }
 }
