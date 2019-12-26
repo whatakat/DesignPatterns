@@ -1,5 +1,5 @@
 package com.example.designpatterns.iteratorAndLinker;
-import java.util.Iterator;
+//import java.util.Iterator;
 
 public class DinerMenuIterator implements Iterator {
     MenuItem[] items;
@@ -20,7 +20,6 @@ public class DinerMenuIterator implements Iterator {
         }
     }
 
-    @Override
     public void remove() {
         if (position<=0){
             throw new IllegalStateException
