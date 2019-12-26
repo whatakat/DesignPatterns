@@ -1,6 +1,7 @@
 package com.example.designpatterns.iteratorAndLinker;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class PancakeHouseMenu {
     ArrayList<MenuItem> menuItems;
@@ -19,7 +20,7 @@ public class PancakeHouseMenu {
         MenuItem menuItem = new MenuItem(name,description,vegetarian,price);
         menuItems.add(menuItem);
     }
-    public Iterator createIterator(){
-        return new PancakeHouseIterator(menuItems);
+    public Iterator<MenuItem> createIterator(){
+        return menuItems.iterator();
     }
 }
