@@ -1,5 +1,5 @@
 package com.example.designpatterns.iteratorAndLinker;
-//import java.util.Iterator;
+import java.util.Iterator;
 
 public class DinerMenuIterator implements Iterator {
     MenuItem[] items;
