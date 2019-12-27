@@ -3,7 +3,7 @@ package com.example.designpatterns.iteratorAndLinker;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class PancakeHouseMenu implements Menu {
+public class PancakeHouseMenu {
     ArrayList<MenuItem> menuItems;
     public PancakeHouseMenu(){
         menuItems = new ArrayList<MenuItem>();
