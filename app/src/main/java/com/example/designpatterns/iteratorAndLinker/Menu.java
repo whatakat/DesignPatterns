@@ -2,6 +2,7 @@ package com.example.designpatterns.iteratorAndLinker;
 
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Menu extends MenuComponent {
     ArrayList<MenuComponent> menuComponents = new ArrayList<MenuComponent>();
@@ -31,5 +32,10 @@ public class Menu extends MenuComponent {
         System.out.print("\n"+getName());
         System.out.println(", "+getDescription());
         System.out.println("-------------------");
+        Iterator<MenuComponent> iterator = menuComponents.iterator();
+        while (iterator.hasNext()){
+            MenuComponent menuComponent = iterator.next();
+            menuComponent.print();
+        }
     }
 }
