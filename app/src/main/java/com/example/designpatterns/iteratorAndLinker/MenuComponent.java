@@ -1,6 +1,9 @@
 package com.example.designpatterns.iteratorAndLinker;
 
+import java.util.Iterator;
+
 public abstract class MenuComponent {
+    Iterator<MenuComponent> iterator = null;
     public void add(MenuComponent menuComponent){
         throw new UnsupportedOperationException();
     }
@@ -24,5 +27,11 @@ public abstract class MenuComponent {
     }
     public void print(){
         throw new UnsupportedOperationException();
+    }
+    public Iterator<MenuComponent> createIterator(){
+        if (iterator == null){
+            iterator = new CompositeIterator(menuComponents.iterator());
+        }
+        return iterator;
     }
 }
