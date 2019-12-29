@@ -29,9 +29,7 @@ public abstract class MenuComponent {
         throw new UnsupportedOperationException();
     }
     public Iterator<MenuComponent> createIterator(){
-        if (iterator == null){
-            iterator = new CompositeIterator(menuComponents.iterator());
-        }
+
         return iterator;
     }
 }

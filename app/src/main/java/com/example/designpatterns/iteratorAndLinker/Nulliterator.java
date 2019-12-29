@@ -1,7 +1,7 @@
 package com.example.designpatterns.iteratorAndLinker;
-import java.util.Iterator;
+//import java.util.Iterator;
 
-public class Nulliterator implements Iterator<MenuComponent> {
+public class Nulliterator implements Iterator {
     public Object next(){
         return null;
     }
