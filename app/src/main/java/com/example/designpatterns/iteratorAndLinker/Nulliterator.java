@@ -2,7 +2,7 @@ package com.example.designpatterns.iteratorAndLinker;
 import java.util.Iterator;
 
 public class Nulliterator implements Iterator<MenuComponent> {
-    public Object next(){
+    public MenuComponent next(){
         return null;
     }
     public boolean hasNext(){
