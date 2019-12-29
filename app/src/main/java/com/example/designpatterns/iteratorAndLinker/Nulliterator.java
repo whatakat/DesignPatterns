@@ -1,7 +1,7 @@
 package com.example.designpatterns.iteratorAndLinker;
-//import java.util.Iterator;
+import java.util.Iterator;
 
-public class Nulliterator implements Iterator {
+public class Nulliterator implements Iterator<MenuComponent> {
     public Object next(){
         return null;
     }
@@ -11,5 +11,6 @@ public class Nulliterator implements Iterator {
     public void remove(){
         throw new UnsupportedOperationException();
     }
+    public Nulliterator(){}
 
 }
