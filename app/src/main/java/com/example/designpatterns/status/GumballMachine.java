@@ -8,4 +8,11 @@ public class GumballMachine {
 
     int state = SOLD_OUT;
     int count = 0;
+
+    public GumballMachine(int count){
+        this.count = count;
+        if (count>0){
+            state = NO_QUARTER;
+        }
+    }
 }
