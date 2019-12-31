@@ -72,4 +72,7 @@ public class GumballMachine {
             System.out.println("No gumball dispensed");
         }
     }
+    public String toString(){
+        return "GumballMachine with "+count+" Status- "+state;
+    }
 }
