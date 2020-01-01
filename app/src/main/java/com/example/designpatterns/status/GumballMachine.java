@@ -1,12 +1,12 @@
 package com.example.designpatterns.status;
 
 public class GumballMachine {
-    final static int SOLD_OUT = 0;
-    final static int NO_QUARTER = 1;
-    final static int HAS_QUARTER = 2;
-    final static int SOLD = 3;
+    State soldOutState;
+    State noQuarterState;
+    State hasQuarterState;
+    State soldState;
 
-    int state = SOLD_OUT;
+    State state;
     int count = 0;
 
     public GumballMachine(int count){
