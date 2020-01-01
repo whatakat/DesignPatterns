@@ -1,6 +1,7 @@
 package com.example.designpatterns.status;
 
 public class SoldState implements State {
+    GumballMachine gumballMachine;
     @Override
     public void insertQuarter() {
         System.out.println("Please wait, we're already giving you a gumball");
@@ -20,6 +21,13 @@ public class SoldState implements State {
 
     @Override
     public void dispense() {
+       gumballMachine.releaseBall();
+       if (gumballMachine.getCount()>0){
+           gumballMachine.setState(gumballMachine.noQuarterState);
+       }else {
+           System.out.println("Oops, out of gumballs!");
+           gumballMachine.setState(gumballMachine.getSoldOutState());
+       }
 
     }
 }
