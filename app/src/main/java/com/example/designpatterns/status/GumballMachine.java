@@ -50,4 +50,10 @@ public class GumballMachine {
     public State getSoldState(){
         return soldState;
     }
+    public int getCount(){
+        return count;
+    }
+    public State getHasQuarterState(){
+        return hasQuarterState;
+    }
 }
