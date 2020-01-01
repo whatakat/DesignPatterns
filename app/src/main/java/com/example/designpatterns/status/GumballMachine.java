@@ -56,4 +56,7 @@ public class GumballMachine {
     public State getHasQuarterState(){
         return hasQuarterState;
     }
+    public State getSoldOutState(){
+        return soldOutState;
+    }
 }
