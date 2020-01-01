@@ -44,4 +44,10 @@ public class GumballMachine {
     public String toString(){
         return "GumballMachine with "+count+" Status- "+state;
     }
+    public State getNoQuarterState(){
+        return noQuarterState;
+    }
+    public State getSoldState(){
+        return soldState;
+    }
 }
