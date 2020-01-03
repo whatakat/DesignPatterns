@@ -2,6 +2,9 @@ package com.example.designpatterns.status;
 
 public class SoldState implements State {
     GumballMachine gumballMachine;
+    public SoldState(GumballMachine gumballMachine){
+        this.gumballMachine = gumballMachine;
+    }
     @Override
     public void insertQuarter() {
         System.out.println("Please wait, we're already giving you a gumball");
