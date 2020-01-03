@@ -60,4 +60,7 @@ public class GumballMachine {
     public State getSoldOutState(){
         return soldOutState;
     }
+    public State getWinnerState(){
+        return winnerState;
+    }
 }

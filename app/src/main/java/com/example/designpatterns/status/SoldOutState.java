@@ -5,6 +5,10 @@ import androidx.annotation.NonNull;
 public class SoldOutState implements State {
     GumballMachine gumballMachine;
 
+    public SoldOutState(GumballMachine gumballMachine){
+        this.gumballMachine = gumballMachine;
+    }
+
     @Override
     public void insertQuarter() {
         System.out.println("You can't insert a quarter, the machine is sold out");
