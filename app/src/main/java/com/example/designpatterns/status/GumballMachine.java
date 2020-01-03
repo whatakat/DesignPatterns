@@ -43,7 +43,7 @@ public class GumballMachine {
     }
 
     public String toString(){
-        return "GumballMachine with "+count+" Status- "+state;
+        return "GumballMachine with "+count+" Status- "+state.getClass().getSimpleName();
     }
     public State getNoQuarterState(){
         return noQuarterState;
