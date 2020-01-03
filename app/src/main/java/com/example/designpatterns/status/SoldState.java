@@ -33,4 +33,9 @@ public class SoldState implements State {
        }
 
     }
+
+    @Override
+    public void refill() {
+
+    }
 }

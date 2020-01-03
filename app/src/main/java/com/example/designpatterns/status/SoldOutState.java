@@ -39,4 +39,7 @@ public class SoldOutState implements State {
     public String toString() {
         return "sold out";
     }
+    public void refill(){
+        gumballMachine.setState(gumballMachine.getNoQuarterState());
+    }
 }
