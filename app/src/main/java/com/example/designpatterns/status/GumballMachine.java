@@ -63,4 +63,8 @@ public class GumballMachine {
     public State getWinnerState(){
         return winnerState;
     }
+    public void refill(int numberGumballs){
+        count=numberGumballs;
+        state = soldOutState;
+    }
 }
