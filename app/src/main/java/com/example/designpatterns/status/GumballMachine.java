@@ -64,7 +64,7 @@ public class GumballMachine {
         return winnerState;
     }
     public void refill(int numberGumballs){
-        count=numberGumballs;
-        state = soldOutState;
+        this.count=numberGumballs;
+        state = noQuarterState;
     }
 }
