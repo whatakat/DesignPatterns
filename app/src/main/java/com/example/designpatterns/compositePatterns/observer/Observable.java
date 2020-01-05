@@ -3,7 +3,6 @@ package com.example.designpatterns.compositePatterns.observer;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.Observer;
 
 public class Observable implements QuackObservable {
     ArrayList<Observer> observers = new ArrayList<Observer>();
@@ -11,6 +10,7 @@ public class Observable implements QuackObservable {
     public Observable(QuackObservable duck){
         this.duck =  duck;
     }
+
     public void registerObserver(Observer observer){
         observers.add(observer);
     }
@@ -23,4 +23,5 @@ public class Observable implements QuackObservable {
             observer.update(duck);
         }
     }
+
 }
