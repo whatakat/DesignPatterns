@@ -1,5 +1,7 @@
 package com.example.designpatterns.compositePatterns;
 
+import com.example.designpatterns.compositePatterns.observer.Observer;
+
 public class GooseAdapter implements Quackable {
     Goose goose;
     public GooseAdapter(Goose goose){
@@ -9,5 +11,15 @@ public class GooseAdapter implements Quackable {
     @Override
     public void quack() {
         goose.honk();
+    }
+
+    @Override
+    public void registerObserver(Observer observer) {
+
+    }
+
+    @Override
+    public void notifyObservers() {
+
     }
 }
