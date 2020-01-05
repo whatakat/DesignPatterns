@@ -3,6 +3,7 @@ package com.example.designpatterns.compositePatterns;
 import com.example.designpatterns.compositePatterns.abstractFactory.AbstractDuckFactory;
 import com.example.designpatterns.compositePatterns.abstractFactory.CountingDuckFactory;
 import com.example.designpatterns.compositePatterns.linker.Flock;
+import com.example.designpatterns.compositePatterns.observer.Quacklogist;
 
 public class DuckSimulator {
     public static void main(String[] args) {
@@ -18,6 +19,7 @@ public class DuckSimulator {
         Quackable gooseDuck = new GooseAdapter(new Goose());
         System.out.println("\nDuck Simulator: With Composite - Flocks");
         Flock flockOfDucks = new Flock();
+        flockOfDucks.add(mallardDuck);
         flockOfDucks.add(redheadDuck);
         flockOfDucks.add(duckCall);
         flockOfDucks.add(rubberDuck);
@@ -37,10 +39,10 @@ public class DuckSimulator {
 
         flockOfDucks.add(flockOfMallards);
 
-        System.out.println("\nDuck Simulator: Whole Flock Simulation");
+        System.out.println("\nDuck Simulator: With Observer");
+        Quacklogist quacklogist = new Quacklogist();
+        flockOfDucks.registerObserver(quacklogist);
         simulate(flockOfDucks);
-        System.out.println("\nDuck Simulator: Mallard Flock Simulation");
-        simulate(flockOfMallards);
         System.out.println("\nThe ducks quacked "+
                 QuackCounter.getQuacks()+
                 " times");
