@@ -1,8 +1,8 @@
 package com.example.designpatterns.compositePatterns;
 
 import com.example.designpatterns.compositePatterns.observer.Observable;
+import com.example.designpatterns.compositePatterns.observer.Observer;
 
-import java.util.Observer;
 
 public class MallardDuckC implements Quackable {
     Observable observable;
